@@ -1,0 +1,3314 @@
+[
+    {
+        "id": "4a4fcf600e2756c7",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "14c8c66d15876e48",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e986bfd3cd25e03f",
+        "type": "ui_tab",
+        "name": "Monitoramento",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "de45d91f44d720a4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#7c009e",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#c800ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#c800ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#c800ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#d84dff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#c800ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "17ec55f82b772747",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "e986bfd3cd25e03f",
+        "order": 1,
+        "disp": false,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e9ad381ac019c36a",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 1,
+        "width": "28",
+        "height": "1"
+    },
+    {
+        "id": "0e80aa6d92f76e33",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 3,
+        "width": "28",
+        "height": "1"
+    },
+    {
+        "id": "f77150c41843d5ef",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 41,
+        "width": "28",
+        "height": "1"
+    },
+    {
+        "id": "bb9191a42cabeae0",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 32,
+        "width": "28",
+        "height": "1"
+    },
+    {
+        "id": "50403f0954824507",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 42,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "1d31b764b78fd805",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 46,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "3359b85c279ba387",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 47,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "858c92fa0cf12be8",
+        "type": "ui_spacer",
+        "z": "4a4fcf600e2756c7",
+        "name": "spacer",
+        "group": "17ec55f82b772747",
+        "order": 51,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "98dbba38533de6f1",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "686fca5fd88f18ba",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Quarto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 820,
+        "wires": [
+            [
+                "d9562a63070bb4ef"
+            ]
+        ]
+    },
+    {
+        "id": "d9562a63070bb4ef",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 820,
+        "wires": [
+            [
+                "6d4fb22f3ac70516",
+                "3ccdefb18e789a62",
+                "f79f0379bd3fef48",
+                "1839a06e12cdc748",
+                "c79b3026d656996d",
+                "473121979e5dc4fa",
+                "c2fe253acfce5552",
+                "978903413ff3ea01"
+            ]
+        ]
+    },
+    {
+        "id": "714f93a00e07871f",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 6,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura-Quarto",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a550b9486dbdfeec",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a331e792022aca67",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a97f47955d2c330a",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Quarto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "2e2c791f91b2a1b1"
+            ]
+        ]
+    },
+    {
+        "id": "80d3c4322d2e8d2a",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "dcecd0ecd3bbc16a",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 7,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Umidade-Quarto",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "075d5667b39265db",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 10,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Luz-Quarto",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "99",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "edaabdc2cb9a4075",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 11,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gás-Quarto",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "2e2c791f91b2a1b1",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "3dcd2b9928bf422e",
+                "f068d6111d8ac3cc",
+                "cb81e49b6b72657e",
+                "81815b1bf4048025"
+            ]
+        ]
+    },
+    {
+        "id": "3dcd2b9928bf422e",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 2",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 20,
+        "wires": [
+            [
+                "80d3c4322d2e8d2a"
+            ]
+        ]
+    },
+    {
+        "id": "f068d6111d8ac3cc",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 3",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "a331e792022aca67"
+            ]
+        ]
+    },
+    {
+        "id": "cb81e49b6b72657e",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 4",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "a550b9486dbdfeec"
+            ]
+        ]
+    },
+    {
+        "id": "81815b1bf4048025",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 5",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 200,
+        "wires": [
+            [
+                "98dbba38533de6f1"
+            ]
+        ]
+    },
+    {
+        "id": "1839a06e12cdc748",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 1",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "714f93a00e07871f"
+            ]
+        ]
+    },
+    {
+        "id": "f79f0379bd3fef48",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 2",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 760,
+        "wires": [
+            [
+                "dcecd0ecd3bbc16a"
+            ]
+        ]
+    },
+    {
+        "id": "3ccdefb18e789a62",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 3",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 820,
+        "wires": [
+            [
+                "075d5667b39265db"
+            ]
+        ]
+    },
+    {
+        "id": "6d4fb22f3ac70516",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 4",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 880,
+        "wires": [
+            [
+                "edaabdc2cb9a4075"
+            ]
+        ]
+    },
+    {
+        "id": "5b1bfe64bc2bda01",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 2,
+        "width": "28",
+        "height": "2",
+        "name": "",
+        "label": "Smart Home",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "32",
+        "color": "#d400ff",
+        "x": 1950,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "71cfecb395f7ad9f",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 52,
+        "width": "28",
+        "height": "2",
+        "name": "",
+        "label": "Eddie Alencar Costa 11251405551",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "24",
+        "color": "#ae00ff",
+        "x": 2020,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "70de99bdf74e505b",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 14,
+        "width": "7",
+        "height": "4",
+        "label": "TemperaturaGraf-Quarto",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c79b3026d656996d",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 7",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 940,
+        "wires": [
+            [
+                "70de99bdf74e505b"
+            ]
+        ]
+    },
+    {
+        "id": "473121979e5dc4fa",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 8",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1000,
+        "wires": [
+            [
+                "a4b8c47ae3396161"
+            ]
+        ]
+    },
+    {
+        "id": "c2fe253acfce5552",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 9",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1060,
+        "wires": [
+            [
+                "49685331a3b2bb31"
+            ]
+        ]
+    },
+    {
+        "id": "978903413ff3ea01",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 10",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1120,
+        "wires": [
+            [
+                "8741225dfa6139d5"
+            ]
+        ]
+    },
+    {
+        "id": "a4b8c47ae3396161",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 15,
+        "width": "7",
+        "height": "4",
+        "label": "UmidadeGraf-Quarto",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49685331a3b2bb31",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 18,
+        "width": "7",
+        "height": "4",
+        "label": "LuzGraf-Quarto",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8741225dfa6139d5",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 19,
+        "width": "7",
+        "height": "4",
+        "label": "GasGraf-Quarto",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7302b5911fe7884e",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 6",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "549dd3e616dd66f0"
+            ]
+        ]
+    },
+    {
+        "id": "29829e5516ed83e4",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "023379bd6b4290eb",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a2b8ca200a8e2423",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "132429371e22d92b",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Sala",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 400,
+        "wires": [
+            [
+                "3769e3b3a76db6d8"
+            ]
+        ]
+    },
+    {
+        "id": "549dd3e616dd66f0",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3769e3b3a76db6d8",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "7302b5911fe7884e",
+                "508f3d3d04fd08f6",
+                "a8a29bab470ba7a2",
+                "dc6003200d752cbb"
+            ]
+        ]
+    },
+    {
+        "id": "508f3d3d04fd08f6",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 7",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 380,
+        "wires": [
+            [
+                "a2b8ca200a8e2423"
+            ]
+        ]
+    },
+    {
+        "id": "a8a29bab470ba7a2",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 8",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 440,
+        "wires": [
+            [
+                "023379bd6b4290eb"
+            ]
+        ]
+    },
+    {
+        "id": "dc6003200d752cbb",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 9",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 500,
+        "wires": [
+            [
+                "29829e5516ed83e4"
+            ]
+        ]
+    },
+    {
+        "id": "b87e01887a71bbf9",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 11",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 20,
+        "wires": [
+            [
+                "edbcf6521a7083e0"
+            ]
+        ]
+    },
+    {
+        "id": "25dad8be3133379e",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8456c4e5862cc839",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "56ad7228dfb96f1d",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fbd568aac785cfda",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Cozinha",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 900,
+        "y": 100,
+        "wires": [
+            [
+                "c356c041dd5af680"
+            ]
+        ]
+    },
+    {
+        "id": "edbcf6521a7083e0",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "c356c041dd5af680",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1100,
+        "y": 100,
+        "wires": [
+            [
+                "b87e01887a71bbf9",
+                "a268bd1836b2e19a",
+                "724ce5cbe3da32f0",
+                "fa19945ceff95608"
+            ]
+        ]
+    },
+    {
+        "id": "a268bd1836b2e19a",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 12",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 80,
+        "wires": [
+            [
+                "56ad7228dfb96f1d"
+            ]
+        ]
+    },
+    {
+        "id": "724ce5cbe3da32f0",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 13",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 140,
+        "wires": [
+            [
+                "8456c4e5862cc839"
+            ]
+        ]
+    },
+    {
+        "id": "fa19945ceff95608",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 14",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 200,
+        "wires": [
+            [
+                "25dad8be3133379e"
+            ]
+        ]
+    },
+    {
+        "id": "d0d1ee4f2590a820",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 15",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 320,
+        "wires": [
+            [
+                "ae2fa97d2d901791"
+            ]
+        ]
+    },
+    {
+        "id": "a43dbb609085632e",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "182e0c370e944039",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4bdc68509061611c",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d7bbf16496c1b3a0",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Banheiro",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "519ae4755e3911c4"
+            ]
+        ]
+    },
+    {
+        "id": "ae2fa97d2d901791",
+        "type": "debug",
+        "z": "4a4fcf600e2756c7",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "519ae4755e3911c4",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1090,
+        "y": 400,
+        "wires": [
+            [
+                "d0d1ee4f2590a820",
+                "7f589d2453c62e5a",
+                "f29b8659feec1f9d",
+                "c289f89d15c90f12"
+            ]
+        ]
+    },
+    {
+        "id": "7f589d2453c62e5a",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 16",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 380,
+        "wires": [
+            [
+                "4bdc68509061611c"
+            ]
+        ]
+    },
+    {
+        "id": "f29b8659feec1f9d",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 17",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "182e0c370e944039"
+            ]
+        ]
+    },
+    {
+        "id": "c289f89d15c90f12",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 18",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 500,
+        "wires": [
+            [
+                "a43dbb609085632e"
+            ]
+        ]
+    },
+    {
+        "id": "c9b8afc5fad71c47",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1130,
+        "y": 840,
+        "wires": [
+            [
+                "bbee51770d86dd2a",
+                "dbc5961e90c6b0a6",
+                "546b3cfb3219a7d6",
+                "fcc4e6f4661b2246",
+                "d3397f57ca033279",
+                "daaf1c9048503332",
+                "48c1123754f01b31",
+                "1e58bedb351fefff"
+            ]
+        ]
+    },
+    {
+        "id": "059ea98b47080fb8",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 24,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura-Cozinha",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0f094146041e05bb",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 25,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Umidade-Cozinha",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1570,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "1f9b2f563c60958e",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 28,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Luz-Cozinha",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "99",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1550,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "4555b4b8c39e69ee",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 29,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gás-Cozinha",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1550,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "fcc4e6f4661b2246",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 19",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 720,
+        "wires": [
+            [
+                "059ea98b47080fb8"
+            ]
+        ]
+    },
+    {
+        "id": "546b3cfb3219a7d6",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 20",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 780,
+        "wires": [
+            [
+                "0f094146041e05bb"
+            ]
+        ]
+    },
+    {
+        "id": "dbc5961e90c6b0a6",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 21",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 840,
+        "wires": [
+            [
+                "1f9b2f563c60958e"
+            ]
+        ]
+    },
+    {
+        "id": "bbee51770d86dd2a",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 22",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 900,
+        "wires": [
+            [
+                "4555b4b8c39e69ee"
+            ]
+        ]
+    },
+    {
+        "id": "fa3d117da164e7ba",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 33,
+        "width": "7",
+        "height": "4",
+        "label": "TemperaturaGraf-Cozinha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1590,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3397f57ca033279",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 23",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 960,
+        "wires": [
+            [
+                "fa3d117da164e7ba"
+            ]
+        ]
+    },
+    {
+        "id": "daaf1c9048503332",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 24",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1020,
+        "wires": [
+            [
+                "83c99f74ff0cab0e"
+            ]
+        ]
+    },
+    {
+        "id": "48c1123754f01b31",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 25",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1080,
+        "wires": [
+            [
+                "8366c30a7e6cd065"
+            ]
+        ]
+    },
+    {
+        "id": "1e58bedb351fefff",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 26",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 1140,
+        "wires": [
+            [
+                "c864b7c3d2670177"
+            ]
+        ]
+    },
+    {
+        "id": "83c99f74ff0cab0e",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 34,
+        "width": "7",
+        "height": "4",
+        "label": "UmidadeGraf-Cozinha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1580,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8366c30a7e6cd065",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 37,
+        "width": "7",
+        "height": "4",
+        "label": "LuzGraf-Cozinha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1570,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c864b7c3d2670177",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 38,
+        "width": "7",
+        "height": "4",
+        "label": "GasGraf-Cozinha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1570,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1280a1092929d0a",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 1340,
+        "wires": [
+            [
+                "139f61b068b2ae2a",
+                "49c0ac75510dd820",
+                "4fcf1c97df714107",
+                "dcfb6015bd51acf7",
+                "e7a332002df5051e",
+                "9383ff402c6756e4",
+                "4e80f0d420b75ad7",
+                "9549dc5bda9c8f30"
+            ]
+        ]
+    },
+    {
+        "id": "c63bb75f79a12b1c",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 8,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura-Sala",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "d556cc1c68864f42",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 9,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Umidade-Sala",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 720,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "39630c9f38c63148",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 12,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Luz-Sala",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "99",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "fad14fb067b78d9c",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 13,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gás-Sala",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "dcfb6015bd51acf7",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 27",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1220,
+        "wires": [
+            [
+                "c63bb75f79a12b1c"
+            ]
+        ]
+    },
+    {
+        "id": "4fcf1c97df714107",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 28",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1280,
+        "wires": [
+            [
+                "d556cc1c68864f42"
+            ]
+        ]
+    },
+    {
+        "id": "49c0ac75510dd820",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 29",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1340,
+        "wires": [
+            [
+                "39630c9f38c63148"
+            ]
+        ]
+    },
+    {
+        "id": "139f61b068b2ae2a",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 30",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1400,
+        "wires": [
+            [
+                "fad14fb067b78d9c"
+            ]
+        ]
+    },
+    {
+        "id": "baff7e49963ff515",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 16,
+        "width": "7",
+        "height": "4",
+        "label": "TemperaturaGraf-Sala",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7a332002df5051e",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 31",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1460,
+        "wires": [
+            [
+                "baff7e49963ff515"
+            ]
+        ]
+    },
+    {
+        "id": "9383ff402c6756e4",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 32",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1520,
+        "wires": [
+            [
+                "f7459e6ddf4e4a01"
+            ]
+        ]
+    },
+    {
+        "id": "4e80f0d420b75ad7",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 33",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1580,
+        "wires": [
+            [
+                "e88852aa0ef30c55"
+            ]
+        ]
+    },
+    {
+        "id": "9549dc5bda9c8f30",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 34",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1640,
+        "wires": [
+            [
+                "2d73b7ac1a4c5385"
+            ]
+        ]
+    },
+    {
+        "id": "f7459e6ddf4e4a01",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 17,
+        "width": "7",
+        "height": "4",
+        "label": "UmidadeGraf-Sala",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e88852aa0ef30c55",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 20,
+        "width": "7",
+        "height": "4",
+        "label": "LuzGraf-Sala",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9569bf",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 710,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d73b7ac1a4c5385",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 21,
+        "width": "7",
+        "height": "4",
+        "label": "GasGraf-Sala",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 720,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70b289a5e7da38f3",
+        "type": "json",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1130,
+        "y": 1380,
+        "wires": [
+            [
+                "eaef8113d33c02b2",
+                "f08e0ac6ddae4c92",
+                "8efd1a2593d25eda",
+                "2e11c0be6877b3f6",
+                "f365e68301f092d0",
+                "acde8d4aca4c8e65",
+                "63eadd5eb2bb8c1d",
+                "ac8dcca1fd8797c2"
+            ]
+        ]
+    },
+    {
+        "id": "95a40e84aeaeaa1c",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 26,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura-Banheiro",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1580,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "f321a76b1c57bcd5",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 27,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Umidade-Banheiro",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1570,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "d502b999140f4e4f",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 30,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Luz-Banheiro",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "99",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1550,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "0cf43df6cf6a3fd6",
+        "type": "ui_gauge",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 31,
+        "width": "7",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gás-Banheiro",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1560,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "2e11c0be6877b3f6",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 35",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1260,
+        "wires": [
+            [
+                "95a40e84aeaeaa1c"
+            ]
+        ]
+    },
+    {
+        "id": "8efd1a2593d25eda",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 36",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1320,
+        "wires": [
+            [
+                "f321a76b1c57bcd5"
+            ]
+        ]
+    },
+    {
+        "id": "f08e0ac6ddae4c92",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 37",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1380,
+        "wires": [
+            [
+                "d502b999140f4e4f"
+            ]
+        ]
+    },
+    {
+        "id": "eaef8113d33c02b2",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 38",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1440,
+        "wires": [
+            [
+                "0cf43df6cf6a3fd6"
+            ]
+        ]
+    },
+    {
+        "id": "0547b8589fb5231c",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 35,
+        "width": "7",
+        "height": "4",
+        "label": "TemperaturaGraf-Banheiro",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1600,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f365e68301f092d0",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 39",
+        "func": "if (!msg.payload) return null;\n\n// garante que é objeto\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\n// valida se tem temperatura\nif (msg.payload.temperatura === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1500,
+        "wires": [
+            [
+                "0547b8589fb5231c"
+            ]
+        ]
+    },
+    {
+        "id": "acde8d4aca4c8e65",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 40",
+        "func": "if (!msg.payload) return null;\n\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.umidade === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1560,
+        "wires": [
+            [
+                "6bf0f909b9def47d"
+            ]
+        ]
+    },
+    {
+        "id": "63eadd5eb2bb8c1d",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 41",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.luz === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.luz;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1620,
+        "wires": [
+            [
+                "fcfb9b317906f2d1"
+            ]
+        ]
+    },
+    {
+        "id": "ac8dcca1fd8797c2",
+        "type": "function",
+        "z": "4a4fcf600e2756c7",
+        "name": "function 42",
+        "func": "if (!msg.payload) return null;\n\nif (typeof msg.payload === \"string\") {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        return null;\n    }\n}\n\nif (msg.payload.gas === undefined) {\n    return null;\n}\n\nmsg.payload = msg.payload.gas;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 1680,
+        "wires": [
+            [
+                "ccae916a6dadb739"
+            ]
+        ]
+    },
+    {
+        "id": "6bf0f909b9def47d",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 36,
+        "width": "7",
+        "height": "4",
+        "label": "UmidadeGraf-Banheiro",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1590,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcfb9b317906f2d1",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 39,
+        "width": "7",
+        "height": "4",
+        "label": "LuzGraf-Banheiro",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1570,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccae916a6dadb739",
+        "type": "ui_chart",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 40,
+        "width": "7",
+        "height": "4",
+        "label": "GasGraf-Banheiro",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ae00ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#da2b2b",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1570,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93b0cb7af7e83b0e",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Sala",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 1340,
+        "wires": [
+            [
+                "e1280a1092929d0a"
+            ]
+        ]
+    },
+    {
+        "id": "a4512e44d854fb53",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Banheiro",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 1380,
+        "wires": [
+            [
+                "70b289a5e7da38f3"
+            ]
+        ]
+    },
+    {
+        "id": "bd6f66fd9d596525",
+        "type": "mqtt in",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Cozinha",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "14c8c66d15876e48",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 950,
+        "y": 840,
+        "wires": [
+            [
+                "c9b8afc5fad71c47"
+            ]
+        ]
+    },
+    {
+        "id": "b6c5692f89b84532",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 4,
+        "width": "14",
+        "height": "2",
+        "name": "",
+        "label": "Quarto",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "32",
+        "color": "#c800ff",
+        "x": 490,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bec10962f8d8f084",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 22,
+        "width": "14",
+        "height": "2",
+        "name": "",
+        "label": "Cozinha",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "32",
+        "color": "#c800ff",
+        "x": 1380,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "bc5823b7d3e177b3",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 5,
+        "width": "14",
+        "height": "2",
+        "name": "",
+        "label": "Sala",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "32",
+        "color": "#c800ff",
+        "x": 190,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "f751c3303a345ec3",
+        "type": "ui_text",
+        "z": "4a4fcf600e2756c7",
+        "group": "17ec55f82b772747",
+        "order": 23,
+        "width": "14",
+        "height": "2",
+        "name": "",
+        "label": "Banheiro",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "32",
+        "color": "#c800ff",
+        "x": 1120,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "d9cfc48e53123384",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 43,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Ligar LED 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 1760,
+        "wires": [
+            [
+                "3fc6eec63cadd2e6"
+            ]
+        ]
+    },
+    {
+        "id": "c9f43ccb5935c24c",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 48,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Desligar LED 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 1840,
+        "wires": [
+            [
+                "3fc6eec63cadd2e6"
+            ]
+        ]
+    },
+    {
+        "id": "3fc6eec63cadd2e6",
+        "type": "mqtt out",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Controle/LED1",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "14c8c66d15876e48",
+        "x": 680,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "e07c68c3fb6c715d",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 44,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Ligar LED 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 1860,
+        "wires": [
+            [
+                "81a3c3f7a51c6712"
+            ]
+        ]
+    },
+    {
+        "id": "86fc392726a069c5",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 49,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Desligar LED 2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 760,
+        "y": 1940,
+        "wires": [
+            [
+                "81a3c3f7a51c6712"
+            ]
+        ]
+    },
+    {
+        "id": "81a3c3f7a51c6712",
+        "type": "mqtt out",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Controle/LED2",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "14c8c66d15876e48",
+        "x": 1000,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "d349140a485b5e5c",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 45,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Ligar LED 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 430,
+        "y": 2000,
+        "wires": [
+            [
+                "57e96c44458c1bd8"
+            ]
+        ]
+    },
+    {
+        "id": "e0d388b91db8b4cf",
+        "type": "ui_button",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "group": "17ec55f82b772747",
+        "order": 50,
+        "width": "8",
+        "height": "2",
+        "passthru": false,
+        "label": "Desligar LED 3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 2080,
+        "wires": [
+            [
+                "57e96c44458c1bd8"
+            ]
+        ]
+    },
+    {
+        "id": "57e96c44458c1bd8",
+        "type": "mqtt out",
+        "z": "4a4fcf600e2756c7",
+        "name": "",
+        "topic": "SmartHome/Controle/LED3",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "14c8c66d15876e48",
+        "x": 680,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "d2f74d869c11bd4d",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
